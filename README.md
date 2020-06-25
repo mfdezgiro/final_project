@@ -2,9 +2,14 @@
 v1.0.0 -final project- Programming for Bioinformatics <br> 
 Author: Miriam Fernández-Giro Muñoz <br><br>
 
-Usage: python3 main.py input_file_query input_folder_genbanks coverage(opt) identity(opt) <br><br>
+Usage: 
 
-Usage example: python3 main.py PBPs_query.fa genbanks <br>
+	python3 main.py input_file_query input_folder_genbanks coverage(opt) identity(opt) 
+
+Usage example: 
+	
+	python3 main.py PBPs_query.fa genbanks
+	
 (EXAMPLE FILE AND FOLDER INCLUDED IN THE REPOSITORY) <br><br>
 
 Requirements: (READ CAREFULLY BEFORE USE) 
