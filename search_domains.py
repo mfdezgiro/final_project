@@ -11,7 +11,7 @@ def domains():
 
 		if archivo.startswith("blast_") == True:
 
-			dominios = open("dominios_"+archivo,'a')
+			dominios = open("domains_"+archivo,'a')
 			dominios.write("lista de dominios en proteinas de "+archivo+":\n")
 
 	for linea in records:
@@ -32,10 +32,10 @@ def domains():
 		for archivo in os.listdir():
 			#busca los dominios en cada archivo multifasta obtenido en el filtrado del blast 
 			if archivo.startswith("blast_") == True:	
-
+					
 				query = open(archivo, 'r')
 				lectura = query.read()
-				dominios = open("dominios_"+archivo,'a') #vuelve a abrir cada archivo creado anteriormente
+				dominios = open("domains_"+archivo,'a') #vuelve a abrir cada archivo creado anteriormente
 			
 
 				if re.search(pattern, lectura):

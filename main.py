@@ -14,14 +14,6 @@ Requirements:
 
 	sys.argv[2] must be a single folder containing genbanks files. This folder must be included in the working directory.
 
-
-Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format).
-Default coverage value: 50
-Default identity value: 25
-Includes a module to find domains (using PROSITE) in each query together with the aligned part of the subject sequences
-IMPORTANT NOTE: DOES NOT search domains in proteins NOT present in the results of blastp
-
-
 """
 
 import genbanks_parse
@@ -33,15 +25,20 @@ import move_results
 
 genbanks_parse.parseo()
 os.chdir("..")
+print("Obtenido el multifasta con todas las CDS\n")
 
 run_blast.create_query()
 run_blast.blast()
+print("Blastp hecho!\n")
 
 filter_and_muscle.muscle()
+print("\nAlineamiento con muscle hecho!\n")
 
 search_domains.domains()
+print("Dominios encontrados!\n")
 
 move_results.folder_results()
+print("Done!\nConsulta los resultados del trabajo en las carpetas creadas\n")
 
 
 
