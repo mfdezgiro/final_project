@@ -12,7 +12,7 @@ Usage example:
 	
 (EXAMPLE FILE AND FOLDER INCLUDED IN THE REPOSITORY) <br><br>
 
-Requirements: (READ CAREFULLY BEFORE USE) <br><br>
+## Requirements: (READ CAREFULLY BEFORE USE) <br><br>
 The first argument:
 
 	input_file_query 
@@ -28,7 +28,8 @@ One extra file:
 must be included by the user in the working directory. <br> <br>
 
 
-Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
+## Extra info about the project
+Initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
 Note: phylogenetic trees have no extension, user can add .nw if necessary <br> 
 Default coverage value: 50 <br>
 Default identity value: 25 <br>
