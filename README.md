@@ -24,7 +24,7 @@ Default identity value: 25 <br>
 Includes a module to find domains (using PROSITE) in each query together with the aligned part of the subject sequences <br>
 IMPORTANT NOTE: DOES NOT search domains in proteins NOT present in the results of blastp <br> <br>
 
-FINAL NOTE: Only one use per project (folder results are created only once). If wished to do another analysys, take out:
+FINAL NOTE: Only one use per project (folder results are created only once). If wished to do another analysis, take out:
 	
 	my_multifasta
 	my_query
