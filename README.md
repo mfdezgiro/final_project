@@ -2,19 +2,19 @@
 v1.0.0 -final project- Programming for Bioinformatics <br> 
 Author: Miriam Fernández-Giro Muñoz <br><br>
 
-Usage: main.py input_file_query input_folder_genbanks coverage(opt) identity(opt) <br><br>
+Usage: python3 main.py input_file_query input_folder_genbanks coverage(opt) identity(opt) <br><br>
 
 Usage example: python3 main.py PBPs_query.fa genbanks <br>
 (EXAMPLE FILE AND FOLDER INCLUDED IN THE REPOSITORY) <br><br>
 
-Requirements: 
+Requirements: (READ CAREFULLY BEFORE USE) 
 
 	sys.argv[1] must be a single fasta or multifasta file containing the queries. This file must be included in the working directory.
-	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB). 
+	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files.
 
 	sys.argv[2] must be a single folder containing genbanks files. This folder must be included in the working directory.
 	
-	prosite.dat included in the working directory
+	prosite.dat included in the working directory 
 
 
 Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
