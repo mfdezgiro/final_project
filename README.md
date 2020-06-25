@@ -14,12 +14,15 @@ Usage example:
 
 Requirements: (READ CAREFULLY BEFORE USE) 
 
-	sys.argv[1] must be a single fasta or multifasta file containing the queries. This file must be included in the working directory.
+	input_file_query (= sys.argv[1]) 
+must be a single fasta or multifasta file containing the queries. This file must be included in the working directory. <br>
 	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files.
 
-	sys.argv[2] must be a single folder containing genbanks files. This folder must be included in the working directory.
+	input_folder_genbanks (= sys.argv[2])
+must be a single folder containing genbanks files. This folder must be included in the working directory. <br>
 	
-	prosite.dat must be included by the user in the working directory.
+	prosite.dat 
+must be included by the user in the working directory. <br> <br>
 
 
 Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
