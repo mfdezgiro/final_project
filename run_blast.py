@@ -1,10 +1,11 @@
 def create_query():
 	
 	import sys
-
+	
+	#lee el input_query y guarda su contenido en un nuevo archivo llamado my_query
 	file = open("my_query","a")
 	with open(sys.argv[1]) as inputquery:
-		file.write(inputquery.read()) #mismo texto que la query_input 
+		file.write(inputquery.read())  
 
 def blast():
 	
