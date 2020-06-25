@@ -1,56 +1,16 @@
-def folder_results():
+import shutil
+import os
 
-	import shutil
-	import os
+folders = ["blast_results", "muscle_results", "trees", "domains"]
 
-	os.mkdir("blast_results")
+for i in range(len(folders)):
 
-	dest1 = "blast_results"
-
-	files = os.listdir()
-
-	for f in files:
-
-		if f.startswith("blast_"):
-
-	   		shutil.move(f, dest1)
-
-
-	os.mkdir("muscle_results")
-
-	dest2 = "muscle_results"
+	os.mkdir(folders[i])
 
 	files = os.listdir()
 
 	for f in files:
 
-		if f.startswith("muscle_"):
+		if f.startswith(folders[i][0:4]):
 
-	   		shutil.move(f, dest2)
-
-
-
-	os.mkdir("trees")
-
-	dest3 = "trees"
-
-	files = os.listdir()
-
-	for f in files:
-
-		if f.startswith("tree_"):
-
-	   		shutil.move(f, dest3)
-
-
-	os.mkdir("domains")
-
-	dest4 = "domains"
-
-	files = os.listdir()
-
-	for f in files:
-
-		if f.startswith("dominios_"):
-
-	   		shutil.move(f, dest4)
+	   		shutil.move(f, folders[i])
