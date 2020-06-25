@@ -1,5 +1,5 @@
 """
-v1.0.0 -final project- Programming for Bioinformatics
+v1.0.0 -final project- Programming for Bioinformatics <br> 
 Author: Miriam Fernández-Giro Muñoz
 
 Usage: main.py input_file_query input_folder_genbanks coverage(opt) identity(opt)
