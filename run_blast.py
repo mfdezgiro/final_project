@@ -4,7 +4,7 @@ def create_query():
 
 	file = open("my_query","a")
 	with open(sys.argv[1]) as inputquery:
-		file.write(inputquery.read()) #crea un archivo en un nuevo directorio llamado blast_results
+		file.write(inputquery.read()) #mismo texto que la query_input 
 
 def blast():
 	
