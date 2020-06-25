@@ -12,16 +12,16 @@ Usage example:
 	
 (EXAMPLE FILE AND FOLDER INCLUDED IN THE REPOSITORY) <br><br>
 
-Requirements: (READ CAREFULLY BEFORE USE) <br>
+Requirements: (READ CAREFULLY BEFORE USE) <br><br>
 The first argument:
 
 	input_file_query 
 must be a single fasta or multifasta file containing the queries. This file must be included in the working directory. <br>
-	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files. <br>
+	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files. <br><br>
 The second argument:
 
 	input_folder_genbanks
-must be a single folder containing genbanks files. This folder must be included in the working directory. <br>
+must be a single folder containing genbanks files. This folder must be included in the working directory. <br><br>
 One extra file:
 	
 	prosite.dat 
