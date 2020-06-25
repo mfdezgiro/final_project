@@ -12,11 +12,13 @@ Usage example:
 	
 (EXAMPLE FILE AND FOLDER INCLUDED IN THE REPOSITORY) <br><br>
 
-Requirements: (READ CAREFULLY BEFORE USE) 
+Requirements: (READ CAREFULLY BEFORE USE) <br>
+The first argument:
 
 	input_file_query (= sys.argv[1]) 
 must be a single fasta or multifasta file containing the queries. This file must be included in the working directory. <br>
-	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files.
+	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB) due to the internal processing of the files. <br>
+The second argument:
 
 	input_folder_genbanks (= sys.argv[2])
 must be a single folder containing genbanks files. This folder must be included in the working directory. <br>
