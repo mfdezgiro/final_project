@@ -20,6 +20,7 @@ must be a single fasta or multifasta file containing the queries. This file must
 
 	input_folder_genbanks (= sys.argv[2])
 must be a single folder containing genbanks files. This folder must be included in the working directory. <br>
+One extra file:
 	
 	prosite.dat 
 must be included by the user in the working directory. <br> <br>
