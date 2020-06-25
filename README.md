@@ -13,9 +13,12 @@ Requirements:
 	IMPORTANT NOTE: query ID must have ONLY 4 LETTERS (e.g mrcB). 
 
 	sys.argv[2] must be a single folder containing genbanks files. This folder must be included in the working directory.
+	
+	prosite.dat included in the working directory
 
 
 Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
+Note: phylogenetic trees have no extension, user can add .nw if necessary <br> 
 Default coverage value: 50 <br>
 Default identity value: 25 <br>
 Includes a module to find domains (using PROSITE) in each query together with the aligned part of the subject sequences <br>
