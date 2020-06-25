@@ -14,7 +14,7 @@ Requirements: (READ CAREFULLY BEFORE USE)
 
 	sys.argv[2] must be a single folder containing genbanks files. This folder must be included in the working directory.
 	
-	prosite.dat included in the working directory 
+	prosite.dat must be included by the user in the working directory.
 
 
 Extra info about the project: initially used to find sequence homology by blastp between five PBPs (mrcB, mrdA, FtsI, pbpF, dacB) in eight genomes of extremophiles organisms. However it can be used to find homology between any query or queries in any genome (in genbank format) and create one phylogenetic tree for each query. <br>
@@ -22,6 +22,18 @@ Note: phylogenetic trees have no extension, user can add .nw if necessary <br>
 Default coverage value: 50 <br>
 Default identity value: 25 <br>
 Includes a module to find domains (using PROSITE) in each query together with the aligned part of the subject sequences <br>
-IMPORTANT NOTE: DOES NOT search domains in proteins NOT present in the results of blastp
+IMPORTANT NOTE: DOES NOT search domains in proteins NOT present in the results of blastp <br> <br>
 
-"""
+FINAL NOTE: Only one use per project (folder results are created only once). If wished to do another analysys, take out:
+	
+	my_multifasta
+	my_query
+	my_blast
+	blast_results
+	muscle_results
+	trees
+	domains
+	
+from the working directory.
+
+
